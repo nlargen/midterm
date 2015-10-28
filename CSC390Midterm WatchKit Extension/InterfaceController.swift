@@ -12,9 +12,34 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var listpicker: WKInterfacePicker!
     
-    override func awakeWithContext(context: AnyObject?) {
+    @IBAction func controlbutton1(value : Int)
+    {
+        conversioncore.speedselected = value
+        print("\(conversioncore.speedselected)")
+        
+    }
+    @IBAction func pickerupdate(value: Int)
+    {
+        conversioncore.speedselected = value
+        print("\(conversioncore.speedselected)")
+    }
+    override func awakeWithContext(context: AnyObject?)
+    {
         super.awakeWithContext(context)
+        var ThePickerItems = [WKPickerItem]()
+        for (var i = 0 ; i < 1000; i++)
+        {
+            ThePickerItems.append(WKPickerItem())
+            ThePickerItems[i].title =  ("\(i) Mbps")
+            ThePickerItems[i].caption = "Mbps"
+        }
+        
+        
+        self.listpicker.setItems(ThePickerItems)
+
+        
         
         // Configure interface objects here.
     }

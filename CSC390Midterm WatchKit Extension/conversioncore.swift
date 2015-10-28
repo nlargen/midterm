@@ -1,5 +1,5 @@
 //
-//  Singleton.swift
+//  conversioncore.swift
 //  CSC390Midterm
 //
 //  Created by Nicholas Largen on 10/28/15.
@@ -8,8 +8,8 @@
 
 import WatchKit
 
-class Singleton: NSObject
+class conversioncore: NSObject
 {
-    var speedselected = 0;
+    static var speedselected = 0
 
 }

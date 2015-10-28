@@ -10,8 +10,25 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CSC390Midterm_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" id="9hz-ed-Lxf"/>
+                        <button width="1" alignment="left" title="Convert to Bytes" id="9z9-bA-pkc">
+                            <connections>
+                                <action selector="controlbutton1" destination="AgC-eL-Hgc" id="6Gj-Kz-GOS"/>
+                                <segue destination="gQW-LY-yWW" kind="push" id="ywy-dN-nfA"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" layout="vertical" id="9hz-ed-Lxf">
+                            <items>
+                                <picker height="100" alignment="left" id="RGh-yw-oPF">
+                                    <connections>
+                                        <action selector="pickerupdate:" destination="AgC-eL-Hgc" id="aic-oJ-85G"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="listpicker" destination="RGh-yw-oPF" id="SEG-Uv-XT5"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
@@ -21,8 +38,36 @@
             <objects>
                 <controller identifier="Screen2" id="gQW-LY-yWW" customClass="Screen2Controller" customModule="CSC390Midterm_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="dFW-vQ-fax"/>
+                        <label alignment="center" text="Label" textAlignment="center" id="jYB-Wm-HNA"/>
+                        <group width="1" alignment="left" id="dFW-vQ-fax">
+                            <items>
+                                <table alignment="left" id="bfu-Qf-Z2G">
+                                    <items>
+                                        <tableRow identifier="cell" id="B1X-Kb-VZh" customClass="TableCell" customModule="CSC390Midterm_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" layout="vertical" id="0rg-Yr-T2V">
+                                                <items>
+                                                    <group width="1" alignment="left" id="wPK-fF-X9c">
+                                                        <items>
+                                                            <label alignment="right" text="Label" id="Oi8-Qt-rqN"/>
+                                                            <label alignment="left" verticalAlignment="center" text="Label" id="Tuj-cr-DEU"/>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="ByteType" destination="Oi8-Qt-rqN" id="c63-Tq-rix"/>
+                                                <outlet property="Speedconverted" destination="Tuj-cr-DEU" id="9Mf-ei-Ity"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="Table1" destination="bfu-Qf-Z2G" id="0kG-4f-BM8"/>
+                        <outlet property="mbpslabel" destination="jYB-Wm-HNA" id="M4u-wd-TjG"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="431" y="345"/>

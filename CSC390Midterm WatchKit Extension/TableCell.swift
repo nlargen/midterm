@@ -1,5 +1,5 @@
 //
-//  Singleton.swift
+//  TableCell.swift
 //  CSC390Midterm
 //
 //  Created by Nicholas Largen on 10/28/15.
@@ -8,8 +8,9 @@
 
 import WatchKit
 
-class Singleton: NSObject
+class TableCell: NSObject
 {
-    var speedselected = 0;
+    @IBOutlet var ByteType: WKInterfaceLabel!
+    @IBOutlet var Speedconverted: WKInterfaceLabel!
 
 }

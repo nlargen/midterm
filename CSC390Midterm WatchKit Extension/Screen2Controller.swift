@@ -12,7 +12,20 @@ import Foundation
 
 class Screen2Controller: WKInterfaceController {
 
-    override func awakeWithContext(context: AnyObject?) {
+    @IBOutlet var mbpslabel: WKInterfaceLabel!
+    @IBOutlet var Table1: WKInterfaceTable!
+    override func awakeWithContext(context: AnyObject?)
+    {
+        mbpslabel.setText("\(conversioncore.speedselected) Mbps")
+        let tablevals = ["Bytes","KiloBytes","MBytes","GBps"]
+        self.Table1.setNumberOfRows(tablevals.count, withRowType: "cell")
+        for(var i = 0; i < tablevals.count; i++)
+        {
+            let currRow = self.Table1.rowControllerAtIndex(i) as! TableCell
+            currRow.ByteType.setText(tablevals[i])
+            
+        }
+
         super.awakeWithContext(context)
         
         // Configure interface objects here.
