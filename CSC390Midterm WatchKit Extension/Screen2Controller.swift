@@ -35,8 +35,8 @@ class Screen2Controller: WKInterfaceController {
     }
     func converter()
     {
-        conversioncore.bytespeed.append(conversioncore.speedselected * 1024 * 1024)
-        conversioncore.bytespeed.append(conversioncore.bytespeed[0] / 8)
+        conversioncore.bytespeed.append((conversioncore.speedselected * 1024 * 1024) / 8)
+        conversioncore.bytespeed.append(conversioncore.bytespeed[0] / 1024)
         conversioncore.bytespeed.append(conversioncore.bytespeed[1] / 1024)
         conversioncore.bytespeed.append(conversioncore.bytespeed[2] / 1024)
     }

@@ -56,7 +56,7 @@
                                             </group>
                                             <connections>
                                                 <outlet property="ByteType" destination="Oi8-Qt-rqN" id="c63-Tq-rix"/>
-                                                <outlet property="Speedconverted" destination="Tuj-cr-DEU" id="9Mf-ei-Ity"/>
+                                                <outlet property="Speedconverted" destination="Tuj-cr-DEU" id="PY6-Vw-f9J"/>
                                             </connections>
                                         </tableRow>
                                     </items>
@@ -67,7 +67,6 @@
                     <connections>
                         <outlet property="Table1" destination="bfu-Qf-Z2G" id="0kG-4f-BM8"/>
                         <outlet property="mbpslabel" destination="jYB-Wm-HNA" id="M4u-wd-TjG"/>
-                        <outlet property="speedlabel" destination="Tuj-cr-DEU" id="X36-jz-NOy"/>
                     </connections>
                 </controller>
             </objects>
