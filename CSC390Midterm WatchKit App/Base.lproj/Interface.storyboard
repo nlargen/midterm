@@ -67,6 +67,7 @@
                     <connections>
                         <outlet property="Table1" destination="bfu-Qf-Z2G" id="0kG-4f-BM8"/>
                         <outlet property="mbpslabel" destination="jYB-Wm-HNA" id="M4u-wd-TjG"/>
+                        <outlet property="speedlabel" destination="Tuj-cr-DEU" id="X36-jz-NOy"/>
                     </connections>
                 </controller>
             </objects>
