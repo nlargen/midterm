@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  CSC390Midterm WatchKit Extension
+//  Screen2Controller.swift
+//  CSC390Midterm
 //
 //  Created by Nicholas Largen on 10/28/15.
 //  Copyright © 2015 Nicholas Largen. All rights reserved.
@@ -10,9 +10,8 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class Screen2Controller: WKInterfaceController {
 
-    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
