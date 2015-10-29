@@ -10,8 +10,8 @@ import WatchKit
 
 class conversioncore: NSObject
 {
-    static var speedselected = 0
-    static var bytespeed = [Int]()
+    static var speedselected = 0.0
+    static var bytespeed = [Double]()
     
 
 }

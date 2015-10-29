@@ -14,13 +14,13 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var listpicker: WKInterfacePicker!
     
-    @IBAction func controlbutton1(value : Int)
+    @IBAction func controlbutton1(value : Double)
     {
         conversioncore.speedselected = value
         print("\(conversioncore.speedselected)")
         
     }
-    @IBAction func pickerupdate(value: Int)
+    @IBAction func pickerupdate(value: Double)
     {
         conversioncore.speedselected = value
         print("\(conversioncore.speedselected)")
